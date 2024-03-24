@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyualg-materials"
+version = "0.0.1"
+description = "learning python materials using interactive NBs"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+keywords = ["python", "basics", "interactive"]
+authors = [
+  {email = "ualg.python@.gmail.com"},
+  {name = "David Palecek"}
+]
+
+maintainers = [
+  {name = "David Palecek", email = "ualg.python@.gmail.com"}
+]
+
+dependencies = [
+  "matplotlib",
+  "pandas",
+  "scikit-learn",
+  "seaborn"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+  "pytest-cov[all]"
+]
+
+[project.urls]
+repository = "https://github.com/Py-ualg/learning-materials/tree/main"
